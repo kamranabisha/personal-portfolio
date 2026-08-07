@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduPortal | Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h2>EduPortal</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+              <a href="profile.html"
+                     class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="pages/attendance.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="pages/timetable.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Timetable
+                </a>
+            </li>
+
+            <li>
+                <a href="pages/results.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+            <li>
+                <a href="logout.html"></a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Top Navbar -->
+
+        <header class="topbar">
+
+            <div class="welcome">
+
+                <h2>Welcome Back, Abisha 👋</h2>
+
+                <p>Here's what's happening today.</p>
+
+            </div>
+
+            <div class="top-right">
+
+                <i class="fa-solid fa-bell notification"></i>
+
+                <div class="student">
+
+                    <img src="pic.jpeg" alt="Student">
+
+                    <div>
+
+                        <h4>Abisha Kamran</h4>
+
+                        <small>BS Information Technology</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Dashboard Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h2>6</h2>
+
+                <p>Registered Courses</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h2>3.82</h2>
+
+                <p>Current GPA</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h2>92%</h2>
+
+                <p>Attendance</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h2>A+</h2>
+
+                <p>Overall Grade</p>
+
+            </div>
+
+        </section>
+
+        <!-- Second Section -->
+
+        <section class="dashboard-grid">
+
+            <!-- Timetable -->
+
+            <div class="table-card">
+
+                <div class="card-header">
+
+                    <h3>Today's Timetable</h3>
+
+                </div>
+
+                <table>
+
+                    <tr>
+                        <th>Time</th>
+                        <th>Course</th>
+                        <th>Room</th>
+                    </tr>
+
+                    <tr>
+                        <td>09:00 AM</td>
+                        <td>Web Development</td>
+                        <td>Lab-4</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>Database Systems</td>
+                        <td>Room-12</td>
+                    </tr>
+
+                    <tr>
+                        <td>02:00 PM</td>
+                        <td>Operating Systems</td>
+                        <td>Lab-2</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- Announcements -->
+
+            <div class="announcement-card">
+
+                <div class="card-header">
+
+                    <h3>Latest Announcements</h3>
+
+                </div>
+
+                <div class="announcement">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <div>
+
+                        <h4>Mid-Term Exams</h4>
+
+                        <p>Mid-term exams begin from 15 September.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="announcement">
+
+                    <i class="fa-solid fa-bullhorn"></i>
+
+                    <div>
+
+                        <h4>Course Registration</h4>
+
+                        <p>Registration closes on 10 September.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="announcement">
+
+                    <i class="fa-solid fa-medal"></i>
+
+                    <div>
+
+                        <h4>Scholarship Notice</h4>
+
+                        <p>Merit scholarship applications are now open.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Bottom Section -->
+
+        <section class="bottom-grid">
+
+            <!-- Progress -->
+
+            <div class="progress-card">
+
+                <div class="card-header">
+
+                    <h3>Semester Progress</h3>
+
+                </div>
+
+                <div class="progress">
+
+                    <div class="progress-bar" style="width:75%;">
+                        75%
+                    </div>
+
+                </div>
+
+                <p>Semester Completion</p>
+
+            </div>
+
+            <!-- Upcoming Events -->
+
+            <div class="events-card">
+
+                <div class="card-header">
+
+                    <h3>Upcoming Events</h3>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        📚 Assignment Submission - Aug 08
+                    </li>
+
+                    <li>
+                        💻 Programming Lab - Aug 10
+                    </li>
+
+                    <li>
+                        🎓 Career Fair - Aug 15
+                    </li>
+
+                    <li>
+                        📝 Quiz Week - Aug 18
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

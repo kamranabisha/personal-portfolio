@@ -1,0 +1,1720 @@
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#FFFFFF;
+    color:#111827;
+    overflow-x:hidden;
+
+}
+
+
+/* =========================
+      LOADING SCREEN
+========================= */
+
+
+.loader{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background:#111827;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:9999;
+
+}
+
+
+
+.plane-loader i{
+
+    font-size:70px;
+
+    color:#14B8A6;
+
+    animation:fly 1.5s infinite alternate;
+
+}
+
+
+
+.loader h2{
+
+    color:#FFFFFF;
+
+    font-size:40px;
+
+    margin-top:20px;
+
+}
+
+
+
+@keyframes fly{
+
+from{
+
+    transform:translateY(20px);
+
+}
+
+to{
+
+    transform:translateY(-20px);
+
+}
+
+}
+
+
+
+/* =========================
+      STATS SECTION
+========================= */
+
+
+.stats{
+
+    width:90%;
+
+    margin:100px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.stat-box{
+
+
+    background:#374151;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    transition:.4s;
+
+}
+
+
+
+.stat-box:hover{
+
+    transform:translateY(-10px);
+
+    background:#111827;
+
+}
+
+
+
+.stat-box i{
+
+    font-size:40px;
+
+    color:#14B8A6;
+
+}
+
+
+
+.stat-box h2{
+
+    font-size:45px;
+
+    color:#F97316;
+
+    margin:15px;
+
+}
+
+
+
+.stat-box p{
+
+    color:#FFFFFF;
+
+}
+
+
+
+/* =========================
+      GLASS EFFECT
+========================= */
+
+
+.search-box,
+.newsletter,
+.package-card,
+.hotel-card,
+.review,
+.stat-box{
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+/* =========================
+      IMAGE HOVER
+========================= */
+
+
+.hero-image img,
+.hotel-card img,
+.card img,
+.about-image img{
+
+    transition:.5s;
+
+}
+
+
+
+.hero-image img:hover,
+.hotel-card img:hover,
+.card img:hover,
+.about-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* =========================
+      BUTTON EFFECT
+========================= */
+
+
+button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+button:hover{
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* =========================
+      RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+.stats{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+ 
+/* =========================
+        NAVBAR
+========================= */
+
+
+header{
+
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:1000;
+
+}
+
+
+
+.navbar{
+
+    height:80px;
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#374151;
+
+    padding:0 35px;
+
+    border-radius:0 0 20px 20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#FFFFFF;
+
+}
+
+
+
+.logo i{
+
+    color:#14B8A6;
+
+    margin-right:8px;
+
+}
+
+
+
+.logo span{
+
+    color:#14B8A6;
+
+}
+
+
+
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+
+
+.nav-links a{
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:#14B8A6;
+
+}
+
+
+
+
+.book-btn{
+
+    background:#F97316;
+
+    color:#111827;
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.book-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px #F9731655;
+
+}
+
+
+
+
+
+.menu{
+
+    display:none;
+
+    font-size:25px;
+
+    color:#14B8A6;
+
+}
+
+
+
+
+
+
+/* =========================
+        HERO SECTION
+========================= */
+
+
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    width:90%;
+
+    margin:auto;
+
+    padding-top:100px;
+
+}
+
+
+
+
+.hero-content{
+
+    width:50%;
+
+    animation:slideLeft 1s ease;
+
+}
+
+
+
+
+.hero-content h1{
+
+    font-size:60px;
+
+    line-height:1.2;
+
+    font-weight:800;
+
+    color:#111827;
+
+}
+
+
+
+.hero-content h1 span{
+
+    color:#14B8A6;
+
+}
+
+
+
+
+.hero-content p{
+
+    margin:25px 0;
+
+    color:#4B5563;
+
+    font-size:18px;
+
+    max-width:550px;
+
+}
+
+
+
+
+.hero-buttons button{
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    border:none;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    margin-right:15px;
+
+    transition:.3s;
+
+}
+
+
+
+
+.primary-btn{
+
+    background:#14B8A6;
+
+    color:#FFFFFF;
+
+    font-weight:600;
+
+}
+
+
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px #14B8A655;
+
+}
+
+
+
+
+.secondary-btn{
+
+    background:transparent;
+
+    border:2px solid #14B8A6 !important;
+
+    color:#111827;
+
+}
+
+
+
+.secondary-btn:hover{
+
+    background:#14B8A6;
+
+    color:#FFFFFF;
+
+}
+
+
+
+
+
+
+.hero-image{
+
+    width:45%;
+
+    animation:slideRight 1s ease;
+
+}
+
+
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+
+
+
+
+/* =========================
+       ANIMATIONS
+========================= */
+
+
+@keyframes slideLeft{
+
+from{
+
+    opacity:0;
+
+    transform:translateX(-100px);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+}
+
+
+
+
+@keyframes slideRight{
+
+from{
+
+    opacity:0;
+
+    transform:translateX(100px);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+}
+
+/* =========================
+       SEARCH BOX
+========================= */
+
+
+.search-box{
+
+    width:85%;
+
+    margin:50px auto;
+
+    background:#374151;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+
+
+
+.search-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+
+.search-item i{
+
+    font-size:30px;
+
+    color:#14B8A6;
+
+}
+
+
+
+
+.search-item h4{
+
+    font-size:17px;
+
+    color:#FFFFFF;
+
+}
+
+
+
+
+.search-item p{
+
+    color:#D1D5DB;
+
+}
+
+
+
+
+
+.search-box button{
+
+    background:#F97316;
+
+    color:#111827;
+
+    border:none;
+
+    padding:15px 40px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.search-box button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px #F9731655;
+
+}
+
+
+
+
+
+
+/* =========================
+       DESTINATIONS
+========================= */
+
+
+.destinations{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+
+
+.destinations h2{
+
+    font-size:40px;
+
+    color:#111827;
+
+}
+
+
+
+
+.subtitle{
+
+    color:#4B5563;
+
+    margin:15px;
+
+}
+
+
+
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+.card{
+
+    background:#374151;
+
+    padding-bottom:25px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+
+
+
+
+.card:hover{
+
+    transform:translateY(-15px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+
+
+
+
+.card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+.card h3{
+
+    margin:20px 0 5px;
+
+    font-size:25px;
+
+    color:#FFFFFF;
+
+}
+
+
+
+
+
+.card p{
+
+    color:#D1D5DB;
+
+}
+
+
+
+
+
+.card button{
+
+    margin-top:20px;
+
+    background:#14B8A6;
+
+    color:#FFFFFF;
+
+    border:none;
+
+    padding:10px 30px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+
+.card button:hover{
+
+    background:#F97316;
+
+    color:#111827;
+
+}
+
+
+
+
+
+
+/* =========================
+       MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+
+
+.menu{
+
+    display:block;
+
+}
+
+
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+
+.hero-content,
+.hero-image{
+
+    width:100%;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+
+
+.search-box{
+
+    flex-direction:column;
+
+}
+
+
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* =========================
+      ABOUT SECTION
+========================= */
+
+
+.about{
+
+    width:90%;
+
+    margin:120px auto;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+
+
+.about-image{
+
+    width:45%;
+
+}
+
+
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:30px;
+
+}
+
+
+
+
+
+.about-content{
+
+    width:55%;
+
+}
+
+
+
+.about-content h2{
+
+    font-size:40px;
+
+    color:#111827;
+
+}
+
+
+
+.about-content p{
+
+    color:#4B5563;
+
+    margin:20px 0;
+
+}
+
+
+
+
+
+.features{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+
+.features div{
+
+    background:#374151;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+
+
+.features i{
+
+    font-size:30px;
+
+    color:#14B8A6;
+
+}
+
+
+
+.features h3{
+
+    color:#FFFFFF;
+
+}
+
+
+
+.features p{
+
+    color:#D1D5DB;
+
+}
+
+
+
+
+
+
+
+/* =========================
+        PACKAGES
+========================= */
+
+
+.packages,
+.hotels,
+.reviews{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+
+
+
+.packages h2,
+.hotels h2,
+.reviews h2{
+
+    font-size:40px;
+
+    color:#111827;
+
+}
+
+
+
+
+.package-container,
+.hotel-container,
+.review-box{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+
+.package-card{
+
+    background:#374151;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    transition:.3s;
+
+}
+
+
+
+.package-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+
+.package-card h3{
+
+    color:#FFFFFF;
+
+}
+
+
+
+.package-card h1{
+
+    color:#14B8A6;
+
+}
+
+
+
+.package-card p{
+
+    color:#D1D5DB;
+
+}
+
+
+
+.package-card button{
+
+    margin-top:20px;
+
+    padding:12px 30px;
+
+    border:none;
+
+    background:#F97316;
+
+    color:#111827;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.popular{
+
+    border:2px solid #F97316;
+
+}
+
+
+
+
+
+.popular span{
+
+    background:#F97316;
+
+    color:#111827;
+
+    padding:8px 20px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+          HOTELS
+========================= */
+
+
+
+.hotel-card{
+
+    background:#374151;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+
+
+.hotel-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.hotel-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+
+
+.hotel-card h3{
+
+    margin:20px;
+
+    color:#FFFFFF;
+
+}
+
+
+
+.hotel-card p{
+
+    color:#F97316;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+          REVIEWS
+========================= */
+
+
+.review{
+
+    background:#374151;
+
+    padding:30px;
+
+    border-radius:25px;
+
+}
+
+
+
+.review h3{
+
+    color:#FFFFFF;
+
+}
+
+
+
+.review p{
+
+    color:#D1D5DB;
+
+}
+
+
+
+
+
+
+/* =========================
+      RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+.about{
+
+    flex-direction:column;
+
+}
+
+
+
+.about-image,
+.about-content{
+
+    width:100%;
+
+}
+
+
+
+.package-container,
+.hotel-container,
+.review-box{
+
+    grid-template-columns:1fr;
+
+}
+
+
+}
+
+/* =========================
+        NEWSLETTER
+========================= */
+
+
+.newsletter{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+
+    background:#374151;
+
+    padding:60px;
+
+    border-radius:30px;
+
+}
+
+
+
+
+.newsletter h2{
+
+    font-size:40px;
+
+    color:#FFFFFF;
+
+}
+
+
+
+.newsletter p{
+
+    color:#D1D5DB;
+
+    margin:15px 0 30px;
+
+}
+
+
+
+
+.newsletter input{
+
+    padding:15px 25px;
+
+    width:300px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+}
+
+
+
+
+.newsletter button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    background:#14B8A6;
+
+    color:#FFFFFF;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    margin-left:10px;
+
+    transition:.3s;
+
+}
+
+
+
+.newsletter button:hover{
+
+    background:#F97316;
+
+    color:#111827;
+
+}
+
+
+
+
+
+
+
+/* =========================
+          FOOTER
+========================= */
+
+
+footer{
+
+    background:#111827;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+
+
+
+.footer-logo{
+
+    font-size:30px;
+
+    color:#14B8A6;
+
+    font-weight:700;
+
+}
+
+
+
+
+.footer-logo span{
+
+    color:#F97316;
+
+}
+
+
+
+
+.social i{
+
+    margin:15px;
+
+    font-size:25px;
+
+    color:#FFFFFF;
+
+    transition:.3s;
+
+}
+
+
+
+
+.social i:hover{
+
+    color:#14B8A6;
+
+}
+
+
+
+
+.copyright{
+
+    margin-top:20px;
+
+    color:#D1D5DB;
+
+}
+
+
+
+
+
+
+
+/* =========================
+      MOBILE MENU
+========================= */
+
+
+@media(max-width:900px){
+
+
+
+.nav-links.active{
+
+
+    display:flex;
+
+    position:absolute;
+
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:#374151;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+
+
+.search-box{
+
+    flex-direction:column;
+
+}
+
+
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.features{
+
+    flex-direction:column;
+
+}
+
+
+
+.newsletter input{
+
+    width:100%;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.newsletter button{
+
+    margin-left:0;
+
+}
+
+
+
+}
+
+
+
+
+
+
+@media(max-width:500px){
+
+
+.navbar{
+
+    width:95%;
+
+    padding:0 20px;
+
+}
+
+
+
+.logo{
+
+    font-size:24px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:35px;
+
+}
+
+
+
+.about-content h2,
+.packages h2,
+.hotels h2,
+.reviews h2,
+.newsletter h2{
+
+    font-size:30px;
+
+}
+
+
+
+.newsletter{
+
+    padding:40px 20px;
+
+}
+
+
+}

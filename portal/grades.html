@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>University Portal | Grades</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+
+<div id="loader">
+
+    <div class="spinner"></div>
+
+    <h2>University Portal</h2>
+
+</div>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<i class="fa-solid fa-graduation-cap"></i>
+<h2>UniPortal</h2>
+</div>
+
+<ul>
+
+<li>
+<a href="dashboard.html">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="courses.html">
+<i class="fa-solid fa-book"></i>
+Courses
+</a>
+</li>
+
+<li>
+<a href="attendance.html">
+<i class="fa-solid fa-calendar-check"></i>
+Attendance
+</a>
+</li>
+
+<li class="active">
+<a href="grades.html">
+<i class="fa-solid fa-chart-column"></i>
+Grades
+</a>
+</li>
+
+<li>
+<a href="assignments.html">
+<i class="fa-solid fa-file-lines"></i>
+Assignments
+</a>
+</li>
+
+<li>
+<a href="timetable.html">
+<i class="fa-solid fa-clock"></i>
+Timetable
+</a>
+</li>
+
+<li>
+<a href="profile.html">
+<i class="fa-solid fa-user"></i>
+Profile
+</a>
+</li>
+
+<li>
+    <a href="#" id="logoutBtn">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        Logout
+    </a>
+</li>
+
+</ul>
+
+</aside>
+
+<!-- Main Content -->
+
+<main class="main-content">
+
+<header>
+
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<h1>Grades & Results</h1>
+
+<div class="profile">
+
+<img src="https://i.pravatar.cc/150?img=32">
+
+<span>Abisha Kamran</span>
+
+</div>
+
+</header>
+
+<!-- Statistics -->
+
+<div class="grade-summary">
+
+<div class="grade-card">
+<i class="fa-solid fa-award"></i>
+<h2>3.75</h2>
+<p>Current CGPA</p>
+</div>
+
+<div class="grade-card">
+<i class="fa-solid fa-graduation-cap"></i>
+<h2>3.82</h2>
+<p>Semester GPA</p>
+</div>
+
+<div class="grade-card">
+<i class="fa-solid fa-book-open"></i>
+<h2>6</h2>
+<p>Completed Courses</p>
+</div>
+
+<div class="grade-card">
+<i class="fa-solid fa-medal"></i>
+<h2>91%</h2>
+<p>Overall Percentage</p>
+</div>
+
+</div>
+
+<!-- Results Table -->
+
+<div class="table-box">
+
+<h2>Semester Results</h2>
+
+<table>
+
+<tr>
+<th>Course</th>
+<th>Credit Hours</th>
+<th>Marks</th>
+<th>Grade</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Web Development</td>
+<td>3</td>
+<td>92</td>
+<td><span class="badge aplus">A+</span></td>
+<td><span class="green">Passed</span></td>
+</tr>
+
+<tr>
+<td>Database Systems</td>
+<td>3</td>
+<td>88</td>
+<td><span class="badge a">A</span></td>
+<td><span class="green">Passed</span></td>
+</tr>
+
+<tr>
+<td>Operating Systems</td>
+<td>3</td>
+<td>85</td>
+<td><span class="badge bplus">B+</span></td>
+<td><span class="green">Passed</span></td>
+</tr>
+
+<tr>
+<td>Artificial Intelligence</td>
+<td>3</td>
+<td>90</td>
+<td><span class="badge aplus">A+</span></td>
+<td><span class="green">Passed</span></td>
+</tr>
+
+<tr>
+<td>Computer Networks</td>
+<td>3</td>
+<td>87</td>
+<td><span class="badge a">A</span></td>
+<td><span class="green">Passed</span></td>
+</tr>
+
+<tr>
+<td>Software Engineering</td>
+<td>3</td>
+<td>95</td>
+<td><span class="badge aplus">A+</span></td>
+<td><span class="green">Passed</span></td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Performance -->
+
+<div class="performance-box">
+
+<h2>Semester Performance</h2>
+
+<div class="performance-item">
+
+<p>Assignments</p>
+
+<div class="progress">
+<div class="progress-bar" style="width:95%"></div>
+</div>
+
+</div>
+
+<div class="performance-item">
+
+<p>Mid-Term Exams</p>
+
+<div class="progress">
+<div class="progress-bar" style="width:88%"></div>
+</div>
+
+</div>
+
+<div class="performance-item">
+
+<p>Final Exams</p>
+
+<div class="progress">
+<div class="progress-bar" style="width:91%"></div>
+</div>
+
+</div>
+
+<div class="performance-item">
+
+<p>Attendance</p>
+
+<div class="progress">
+<div class="progress-bar" style="width:92%"></div>
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

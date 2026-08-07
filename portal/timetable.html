@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weekly Timetable | EduPortal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>EduPortal</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="timetable.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Timetable
+                </a>
+            </li>
+
+            <li>
+                <a href="results.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+            <div class="welcome">
+                <h2>Weekly Timetable</h2>
+                <p>Semester 8 - Fall 2026</p>
+            </div>
+
+        </div>
+
+        <div class="table-card timetable-table">
+
+            <div class="card-header">
+
+                <h3>Class Schedule</h3>
+
+            </div>
+
+            <table>
+
+                <tr>
+
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>09:00 - 10:30</td>
+
+                    <td class="web">Web Development<br><small>Lab 4</small></td>
+
+                    <td class="db">Database Systems<br><small>Room 201</small></td>
+
+                    <td class="os">Operating Systems<br><small>Room 105</small></td>
+
+                    <td class="se">Software Engineering<br><small>Room 302</small></td>
+
+                    <td class="free">Free</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>11:00 - 12:30</td>
+
+                    <td class="os">Operating Systems</td>
+
+                    <td class="free">Free</td>
+
+                    <td class="web">Web Development</td>
+
+                    <td class="db">Database Systems</td>
+
+                    <td class="ai">Artificial Intelligence</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>01:00 - 02:00</td>
+
+                    <td colspan="5" class="break">
+                        🍴 Lunch Break
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>02:00 - 03:30</td>
+
+                    <td class="ai">Artificial Intelligence</td>
+
+                    <td class="se">Software Engineering</td>
+
+                    <td class="free">Free</td>
+
+                    <td class="web">Web Development Lab</td>
+
+                    <td class="db">Database Lab</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>04:00 - 05:00</td>
+
+                    <td class="free">Free</td>
+
+                    <td class="ai">AI Lab</td>
+
+                    <td class="se">Project Meeting</td>
+
+                    <td class="free">Free</td>
+
+                    <td class="web">Revision Class</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

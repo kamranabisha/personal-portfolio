@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance | EduPortal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>EduPortal</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="attendance.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="timetable.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Timetable
+                </a>
+            </li>
+
+            <li>
+                <a href="results.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+            <div class="welcome">
+                <h2>Attendance Record</h2>
+                <p>Your semester attendance summary.</p>
+            </div>
+
+        </div>
+
+        <!-- Summary Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-calendar-days"></i>
+                <h2>120</h2>
+                <p>Total Classes</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user-check"></i>
+                <h2>110</h2>
+                <p>Present</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user-xmark"></i>
+                <h2>10</h2>
+                <p>Absent</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chart-pie"></i>
+                <h2>92%</h2>
+                <p>Attendance</p>
+            </div>
+
+        </section>
+
+        <!-- Subject Wise Attendance -->
+
+        <div class="table-card mt-3">
+
+            <div class="card-header">
+                <h3>Subject-wise Attendance</h3>
+            </div>
+
+            <table>
+
+                <tr>
+                    <th>Course</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                    <th>Attendance</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Web Development</td>
+                    <td>28</td>
+                    <td>2</td>
+                    <td>93%</td>
+                    <td><span class="badge success">Excellent</span></td>
+                </tr>
+
+                <tr>
+                    <td>Operating Systems</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>83%</td>
+                    <td><span class="badge warning">Good</span></td>
+                </tr>
+
+                <tr>
+                    <td>Database Systems</td>
+                    <td>30</td>
+                    <td>0</td>
+                    <td>100%</td>
+                    <td><span class="badge success">Perfect</span></td>
+                </tr>
+
+                <tr>
+                    <td>Software Engineering</td>
+                    <td>27</td>
+                    <td>3</td>
+                    <td>90%</td>
+                    <td><span class="badge success">Excellent</span></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- Monthly Attendance -->
+
+        <div class="attendance-progress mt-3">
+
+            <div class="progress-box">
+
+                <h3>January</h3>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:90%">
+                        90%
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="progress-box">
+
+                <h3>February</h3>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:95%">
+                        95%
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="progress-box">
+
+                <h3>March</h3>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:88%">
+                        88%
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="progress-box">
+
+                <h3>April</h3>
+
+                <div class="progress">
+                    <div class="progress-bar" style="width:92%">
+                        92%
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

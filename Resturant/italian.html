@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Foodie's | Italian Food</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+body{
+    background:#f7f7f7;
+    font-family:'Poppins',sans-serif;
+}
+
+.page-title{
+    margin-top:120px;
+    text-align:center;
+}
+
+.page-title h1{
+    font-size:50px;
+    color:#111;
+}
+
+.page-title p{
+    font-size:18px;
+    color:#666;
+    margin-top:10px;
+}
+
+.food-container{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.food-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+}
+
+.food-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.food-info{
+    padding:25px;
+}
+
+.food-info h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.food-info p{
+    color:#666;
+    line-height:1.7;
+    font-size:16px;
+}
+
+.price{
+    color:#d4a017;
+    font-size:28px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.stars{
+    color:orange;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.order-btn{
+    display:inline-block;
+    background:#d4a017;
+    color:#fff;
+    padding:12px 30px;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.order-btn:hover{
+    background:#111;
+}
+
+.back{
+    text-align:center;
+    margin:50px;
+}
+
+.back a{
+    background:#111;
+    color:#fff;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:40px;
+}
+
+.back a:hover{
+    background:#d4a017;
+}
+
+</style>
+
+</head>
+<body>
+
+<header class="header">
+
+<a href="index.html" class="logo">
+<i class="fas fa-utensils"></i> Foodie's
+</a>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<div class="page-title">
+
+<h1>Italian Food Menu</h1>
+
+<p>Authentic Italian Cuisine Made with Fresh Ingredients</p>
+
+</div>
+
+<div class="food-container">
+
+<div class="food-card">
+
+<img src="images/italian pizza.jpg" alt="Margherita Pizza">
+
+<div class="food-info">
+
+<h2>Margherita Pizza</h2>
+
+<p>Classic Italian pizza topped with fresh mozzarella, tomatoes and basil.</p>
+
+<div class="price">$14.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/CHICKEN ALFREDO.jpg" alt="Fettuccine Alfredo">
+
+<div class="food-info">
+
+<h2>Fettuccine Alfredo</h2>
+
+<p>Creamy Alfredo pasta made with parmesan cheese and fresh herbs.</p>
+
+<div class="price">$15.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/lasagna.jpg" alt="Lasagna">
+
+<div class="food-info">
+
+<h2>Lasagna</h2>
+
+<p>Layers of pasta, rich meat sauce and melted mozzarella cheese.</p>
+
+<div class="price">$17.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/speghatti.jpg" alt="Spaghetti Bolognese">
+
+<div class="food-info">
+
+<h2>Spaghetti Bolognese</h2>
+
+<p>Traditional spaghetti served with slow-cooked beef and tomato sauce.</p>
+
+<div class="price">$16.49</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/mushroom.jpg" alt="Mushroom Risotto">
+
+<div class="food-info">
+
+<h2>Mushroom Risotto</h2>
+
+<p>Creamy Italian rice with mushrooms, parmesan and herbs.</p>
+
+<div class="price">$18.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/garlic bread.jpg" alt="Garlic Bread">
+
+<div class="food-info">
+
+<h2>Garlic Bread</h2>
+
+<p>Freshly baked bread topped with garlic butter, herbs and mozzarella.</p>
+
+<div class="price">$6.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="back">
+
+<a href="menu.html">
+<i class="fas fa-arrow-left"></i> Back to Menu
+</a>
+
+</div>
+
+</body>
+</html>

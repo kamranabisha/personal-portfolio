@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Foodie's | Fast Food</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+body{
+    background:#f7f7f7;
+    font-family:'Poppins',sans-serif;
+}
+
+.page-title{
+    margin-top:120px;
+    text-align:center;
+}
+
+.page-title h1{
+    font-size:50px;
+    color:#111;
+}
+
+.page-title p{
+    font-size:18px;
+    color:#666;
+    margin-top:10px;
+}
+
+.food-container{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.food-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+}
+
+.food-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.food-info{
+    padding:25px;
+}
+
+.food-info h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.food-info p{
+    color:#666;
+    line-height:1.7;
+    font-size:16px;
+}
+
+.price{
+    color:#d4a017;
+    font-size:28px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.stars{
+    color:orange;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.order-btn{
+    display:inline-block;
+    background:#d4a017;
+    color:#fff;
+    padding:12px 30px;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.order-btn:hover{
+    background:#111;
+}
+
+.back{
+    text-align:center;
+    margin:50px;
+}
+
+.back a{
+    background:#111;
+    color:#fff;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:40px;
+}
+
+.back a:hover{
+    background:#d4a017;
+}
+
+</style>
+
+</head>
+<body>
+
+<header class="header">
+
+<a href="index.html" class="logo">
+<i class="fas fa-utensils"></i> Foodie's
+</a>
+
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<div class="page-title">
+
+<h1>Fast Food Menu</h1>
+
+<p>Hot, Crispy & Freshly Prepared</p>
+
+</div>
+
+<div class="food-container">
+
+<div class="food-card">
+
+<img src="images/beef burger.jpg" alt="Beef Burger">
+
+<div class="food-info">
+
+<h2>Beef Burger</h2>
+
+<p>Juicy grilled beef patty with cheese, lettuce and fresh vegetables.</p>
+
+<div class="price">$10.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/pepporoni.jpg" alt="Pizza">
+
+<div class="food-info">
+
+<h2>Pepperoni Pizza</h2>
+
+<p>Loaded with mozzarella cheese and delicious pepperoni toppings.</p>
+
+<div class="price">$16.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/fries.jpg" alt="French Fries">
+
+<div class="food-info">
+
+<h2>Loaded Fries</h2>
+
+<p>Golden crispy fries served with tomato ketchup and sauces.</p>
+
+<div class="price">$5.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/sandwich.jpg" alt="Club Sandwich">
+
+<div class="food-info">
+
+<h2>Club Sandwich</h2>
+
+<p>Grilled chicken sandwich with cheese, lettuce and mayonnaise.</p>
+
+<div class="price">$8.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/shawarma.jpg" alt="Shawarma">
+
+<div class="food-info">
+
+<h2>Chicken Shawarma</h2>
+
+<p>Soft tortilla wrap filled with spicy chicken and garlic sauce.</p>
+
+<div class="price">$7.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+<div class="food-card">
+
+<img src="images/drum stick.jpg" alt="Fried Chicken">
+
+<div class="food-info">
+
+<h2>Fried Chicken</h2>
+
+<p>Crispy fried chicken served with fries and dipping sauce.</p>
+
+<div class="price">$11.99</div>
+
+<div class="stars">★★★★★</div>
+
+<a href="#" class="order-btn">Order Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="back">
+
+<a href="menu.html">
+<i class="fas fa-arrow-left"></i> Back to Menu
+</a>
+
+</div>
+
+</body>
+</html>

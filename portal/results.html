@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Results | EduPortal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>EduPortal</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="timetable.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    Timetable
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="results.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+            <div class="welcome">
+                <h2>Semester Results</h2>
+                <p>Academic Performance Overview</p>
+            </div>
+
+            <a href="#" class="btn">
+                <i class="fa-solid fa-download"></i>
+                Download Transcript
+            </a>
+
+        </div>
+
+        <!-- GPA Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>3.82</h2>
+                <p>CGPA</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>3.90</h2>
+                <p>SGPA</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-award"></i>
+                <h2>A+</h2>
+                <p>Overall Grade</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-ranking-star"></i>
+                <h2>5</h2>
+                <p>Class Rank</p>
+            </div>
+
+        </section>
+
+        <!-- Result Table -->
+
+        <div class="table-card mt-3">
+
+            <div class="card-header">
+
+                <h3>Subject-wise Result</h3>
+
+            </div>
+
+            <table>
+
+                <tr>
+
+                    <th>Course Code</th>
+                    <th>Course</th>
+                    <th>Credit Hours</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Status</th>
+
+                </tr>
+
+                <tr>
+                    <td>CS401</td>
+                    <td>Web Development</td>
+                    <td>3</td>
+                    <td>91</td>
+                    <td>A+</td>
+                    <td><span class="badge success">Pass</span></td>
+                </tr>
+
+                <tr>
+                    <td>CS402</td>
+                    <td>Operating Systems</td>
+                    <td>3</td>
+                    <td>87</td>
+                    <td>A</td>
+                    <td><span class="badge success">Pass</span></td>
+                </tr>
+
+                <tr>
+                    <td>CS403</td>
+                    <td>Database Systems</td>
+                    <td>3</td>
+                    <td>94</td>
+                    <td>A+</td>
+                    <td><span class="badge success">Pass</span></td>
+                </tr>
+
+                <tr>
+                    <td>CS404</td>
+                    <td>Software Engineering</td>
+                    <td>3</td>
+                    <td>89</td>
+                    <td>A</td>
+                    <td><span class="badge success">Pass</span></td>
+                </tr>
+
+                <tr>
+                    <td>CS405</td>
+                    <td>Artificial Intelligence</td>
+                    <td>3</td>
+                    <td>92</td>
+                    <td>A+</td>
+                    <td><span class="badge success">Pass</span></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- Performance Summary -->
+
+        <div class="result-summary">
+
+            <div class="summary-box">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <h3>Excellent Performance</h3>
+
+                <p>
+                    Congratulations! You achieved outstanding results
+                    this semester and maintained an excellent CGPA.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
