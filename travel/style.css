@@ -1319,11 +1319,54 @@ to{
 
 }
 
+.hotel-book-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
+    margin-top: 15px;
+    padding: 12px 25px;
 
+    border: none;
+    border-radius: 50px;
 
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
 
+    font-size: 15px;
+    font-weight: 600;
 
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.25);
+
+    transition: all 0.35s ease;
+    margin-bottom: 8px;
+    
+}
+
+.hotel-book-btn i {
+    font-size: 13px;
+    transition: transform 0.35s ease;
+}
+
+.hotel-book-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+
+    box-shadow:
+        0 12px 30px rgba(0, 114, 255, 0.4);
+}
+
+.hotel-book-btn:hover i {
+    transform: translateX(5px);
+}
+
+.hotel-book-btn:active {
+    transform: scale(0.96);
+}
 
 
 /* =========================

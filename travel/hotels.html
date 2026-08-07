@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelX | Luxury Hotels</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-plane"></i>
+
+                Travel<span>X</span>
+
+            </div>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="destinations.html">Destinations</a>
+                </li>
+
+                <li>
+                    <a href="packages.html">Packages</a>
+                </li>
+
+                <li>
+                    <a href="hotels.html">Hotels</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <button class="book-btn">
+                Book Now
+            </button>
+
+
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HOTELS -->
+
+    <section class="hotels">
+
+        <h2>
+            Luxury Hotels
+        </h2>
+
+        <p class="subtitle">
+            Stay in comfort, luxury and style around the world
+        </p>
+
+
+        <div class="hotel-container">
+
+
+            <!-- HOTEL 1 -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="images/ocean paradise.jpg"
+                    alt="Ocean Paradise Resort">
+
+                <h3>
+                    Ocean Paradise Resort
+                </h3>
+
+                <p>
+                    ★★★★★ Luxury Hotel
+                </p>
+
+                <button class="hotel-book-btn">
+    Book Now
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
+            </div>
+
+
+            <!-- HOTEL 2 -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="images/mountains view.jpg"
+                    alt="Mountain View Hotel">
+
+                <h3>
+                    Mountain View Hotel
+                </h3>
+
+                <p>
+                    ★★★★★ Premium Stay
+                </p>
+
+               <button class="hotel-book-btn">
+    Book Now
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
+
+            </div>
+
+
+            <!-- HOTEL 3 -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="images/royal palace.jpg"
+                    alt="Royal Palace Hotel">
+
+                <h3>
+                    Royal Palace Hotel
+                </h3>
+
+                <p>
+                    ★★★★★ Luxury Experience
+                </p>
+
+                <button class="hotel-book-btn">
+    Book Now
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
+
+            </div>
+
+
+            <!-- HOTEL 4 -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="images/dubai hotel.jpg"
+                    alt="Dubai Luxury Hotel">
+
+                <h3>
+                    Dubai Luxury Hotel
+                </h3>
+
+                <p>
+                    ★★★★★ Premium Resort
+                </p>
+
+                <button class="hotel-book-btn">
+    Book Now
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
+
+            </div>
+
+
+            <!-- HOTEL 5 -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="images/paris hotel.jpg"
+                    alt="Paris Grand Hotel">
+
+                <h3>
+                    Paris Grand Hotel
+                </h3>
+
+                <p>
+                    ★★★★★ Elegant Stay
+                </p>
+
+                <button class="hotel-book-btn">
+    Book Now
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
+
+            </div>
+
+
+            <!-- HOTEL 6 -->
+
+            <div class="hotel-card">
+
+                <img
+                    src="images/bali hotel.jpg"
+                    alt="Bali Beach Resort">
+
+                <h3>
+                    Bali Beach Resort
+                </h3>
+
+                <p>
+                    ★★★★★ Tropical Resort
+                </p>
+
+                <button class="hotel-book-btn">
+    Book Now
+    <i class="fa-solid fa-arrow-right"></i>
+</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-plane"></i>
+
+            TravelX
+
+        </div>
+
+
+        <p>
+            Explore the world with comfort and confidence.
+        </p>
+
+
+        <p class="copyright">
+
+            © 2026 TravelX. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // MOBILE MENU
+
+        const menu =
+            document.querySelector(".menu");
+
+        const navLinks =
+            document.querySelector(".nav-links");
+
+
+        if (menu) {
+
+            menu.addEventListener("click", () => {
+
+                navLinks.classList.toggle("active");
+
+            });
+
+        }
+
+
+        // BOOK HOTEL
+
+        function bookHotel(hotelName) {
+
+            const name =
+                prompt("Enter your name:");
+
+
+            if (!name) {
+
+                alert("Booking cancelled.");
+
+                return;
+
+            }
+
+
+            const email =
+                prompt("Enter your email:");
+
+
+            if (!email ||
+                !email.includes("@")) {
+
+                alert(
+                    "Please enter a valid email."
+                );
+
+                return;
+
+            }
+
+
+            const nights =
+                prompt(
+                    "How many nights do you want to stay?"
+                );
+
+
+            if (!nights) {
+
+                alert(
+                    "Please enter number of nights."
+                );
+
+                return;
+
+            }
+
+
+            alert(
+
+                "🏨 Hotel Booking Request Submitted!\n\n" +
+
+                "Hotel: " +
+                hotelName +
+
+                "\nName: " +
+                name +
+
+                "\nEmail: " +
+                email +
+
+                "\nNights: " +
+                nights +
+
+                "\n\nThank you for choosing TravelX! ✈️"
+
+            );
+
+        }
+
+
+        // BOOK NOW BUTTON
+
+        const bookBtn =
+            document.querySelector(".book-btn");
+
+
+        if (bookBtn) {
+
+            bookBtn.addEventListener("click", () => {
+
+                window.location.href =
+                    "packages.html";
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

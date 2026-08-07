@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelX | Packages</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+            NAVBAR
+    ========================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-plane"></i>
+
+                Travel<span>X</span>
+
+            </div>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="destinations.html">Destinations</a>
+                </li>
+
+                <li>
+                    <a href="packages.html">Packages</a>
+                </li>
+
+                <li>
+                    <a href="hotels.html">Hotels</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <button class="book-btn">
+                Book Now
+            </button>
+
+
+            <div class="menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+            PACKAGES
+    ========================== -->
+
+    <section class="packages">
+
+        <h2>
+            Explore Our Travel Packages
+        </h2>
+
+        <p class="subtitle">
+            Choose the perfect package for your next adventure
+        </p>
+
+
+        <div class="package-container">
+
+
+            <!-- MALDIVES -->
+
+            <div class="package-card">
+
+                <h3>
+                    Maldives Escape
+                </h3>
+
+                <h1>
+                    $999
+                </h1>
+
+                <p>
+                    5 Days • Luxury Resort • Beach Tour
+                </p>
+
+                <button
+                    onclick="bookPackage('Maldives Escape', '$999')">
+
+                    Book Package
+
+                </button>
+
+            </div>
+
+
+            <!-- SWITZERLAND -->
+
+            <div class="package-card popular">
+
+                <span>
+                    POPULAR
+                </span>
+
+                <h3>
+                    Swiss Adventure
+                </h3>
+
+                <h1>
+                    $1499
+                </h1>
+
+                <p>
+                    7 Days • Mountains • Snow Experience
+                </p>
+
+                <button
+                    onclick="bookPackage('Swiss Adventure', '$1499')">
+
+                    Book Package
+
+                </button>
+
+            </div>
+
+
+            <!-- DUBAI -->
+
+            <div class="package-card">
+
+                <h3>
+                    Dubai Luxury
+                </h3>
+
+                <h1>
+                    $799
+                </h1>
+
+                <p>
+                    4 Days • Hotels • Desert Safari
+                </p>
+
+                <button
+                    onclick="bookPackage('Dubai Luxury', '$799')">
+
+                    Book Package
+
+                </button>
+
+            </div>
+
+
+            <!-- PARIS -->
+
+            <div class="package-card">
+
+                <h3>
+                    Paris Romance
+                </h3>
+
+                <h1>
+                    $1199
+                </h1>
+
+                <p>
+                    5 Days • Eiffel Tower • City Tour
+                </p>
+
+                <button
+                    onclick="bookPackage('Paris Romance', '$1199')">
+
+                    Book Package
+
+                </button>
+
+            </div>
+
+
+            <!-- BALI -->
+
+            <div class="package-card">
+
+                <h3>
+                    Bali Adventure
+                </h3>
+
+                <h1>
+                    $899
+                </h1>
+
+                <p>
+                    6 Days • Beaches • Nature & Adventure
+                </p>
+
+                <button
+                    onclick="bookPackage('Bali Adventure', '$899')">
+
+                    Book Package
+
+                </button>
+
+            </div>
+
+
+            <!-- NEW YORK -->
+
+            <div class="package-card">
+
+                <h3>
+                    New York Experience
+                </h3>
+
+                <h1>
+                    $1299
+                </h1>
+
+                <p>
+                    5 Days • City Tour • Times Square
+                </p>
+
+                <button
+                    onclick="bookPackage('New York Experience', '$1299')">
+
+                    Book Package
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+            FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-plane"></i>
+
+            TravelX
+
+        </div>
+
+
+        <p>
+            Explore the world with comfort and confidence.
+        </p>
+
+
+        <p class="copyright">
+
+            © 2026 TravelX. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+            JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        // =========================
+        // MOBILE MENU
+        // =========================
+
+        const menu =
+            document.querySelector(".menu");
+
+        const navLinks =
+            document.querySelector(".nav-links");
+
+
+        if (menu) {
+
+            menu.addEventListener("click", () => {
+
+                navLinks.classList.toggle("active");
+
+            });
+
+        }
+
+
+        // =========================
+        // BOOK PACKAGE
+        // =========================
+
+        function bookPackage(packageName, price) {
+
+            const name =
+                prompt(
+                    "Enter your name:"
+                );
+
+
+            if (!name) {
+
+                alert("Booking cancelled.");
+
+                return;
+
+            }
+
+
+            const email =
+                prompt(
+                    "Enter your email:"
+                );
+
+
+            if (!email ||
+                !email.includes("@")) {
+
+                alert(
+                    "Please enter a valid email."
+                );
+
+                return;
+
+            }
+
+
+            const guests =
+                prompt(
+                    "How many people are travelling?"
+                );
+
+
+            if (!guests) {
+
+                alert(
+                    "Please enter number of guests."
+                );
+
+                return;
+
+            }
+
+
+            alert(
+
+                "🎉 Booking Request Submitted!\n\n" +
+
+                "Package: " +
+                packageName +
+
+                "\nPrice: " +
+                price +
+
+                "\nName: " +
+                name +
+
+                "\nEmail: " +
+                email +
+
+                "\nGuests: " +
+                guests +
+
+                "\n\nThank you for choosing TravelX! ✈️"
+
+            );
+
+        }
+
+
+        // =========================
+        // BOOK NOW
+        // =========================
+
+        const bookBtn =
+            document.querySelector(".book-btn");
+
+
+        if (bookBtn) {
+
+            bookBtn.addEventListener("click", () => {
+
+                window.location.href =
+                    "packages.html";
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

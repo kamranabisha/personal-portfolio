@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelX | Destinations</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-plane"></i>
+                Travel<span>X</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="destinations.html">Destinations</a>
+                </li>
+
+                <li>
+                    <a href="packages.html">Packages</a>
+                </li>
+
+                <li>
+                    <a href="hotels.html">Hotels</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <button class="book-btn">
+                Book Now
+            </button>
+
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- DESTINATIONS -->
+
+    <section class="destinations">
+
+        <h2>
+            Explore Our Destinations
+        </h2>
+
+        <p class="subtitle">
+            Discover beautiful places and unforgettable experiences
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- MALDIVES -->
+
+            <div class="card">
+
+                <img
+                    src="images/maldives.jpg"
+                    alt="Maldives">
+
+                <h3>
+                    Maldives
+                </h3>
+
+                <p>
+                    Beach Paradise
+                </p>
+
+                <button onclick="showDestination('Maldives')">
+                    Explore
+                </button>
+
+            </div>
+
+
+            <!-- NEW YORK -->
+
+            <div class="card">
+
+                <img
+                    src="images/new york.jpg"
+                    alt="New York">
+
+                <h3>
+                    New York
+                </h3>
+
+                <p>
+                    City Adventure
+                </p>
+
+                <button onclick="showDestination('New York')">
+                    Explore
+                </button>
+
+            </div>
+
+
+            <!-- SWITZERLAND -->
+
+            <div class="card">
+
+                <img
+                    src="images/switzerland.jpg"
+                    alt="Switzerland">
+
+                <h3>
+                    Switzerland
+                </h3>
+
+                <p>
+                    Mountain Escape
+                </p>
+
+                <button onclick="showDestination('Switzerland')">
+                    Explore
+                </button>
+
+            </div>
+
+
+            <!-- DUBAI -->
+
+            <div class="card">
+
+                <img
+                    src="images/dubai.jpg"
+                    alt="Dubai">
+
+                <h3>
+                    Dubai
+                </h3>
+
+                <p>
+                    Luxury & Adventure
+                </p>
+
+                <button onclick="showDestination('Dubai')">
+                    Explore
+                </button>
+
+            </div>
+
+
+            <!-- PARIS -->
+
+            <div class="card">
+
+                <img
+                    src="images/paris.jpg"
+                    alt="Paris">
+
+                <h3>
+                    Paris
+                </h3>
+
+                <p>
+                    City of Romance
+                </p>
+
+                <button onclick="showDestination('Paris')">
+                    Explore
+                </button>
+
+            </div>
+
+
+            <!-- BALI -->
+
+            <div class="card">
+
+                <img
+                    src="images/bali.jpg"
+                    alt="Bali">
+
+                <h3>
+                    Bali
+                </h3>
+
+                <p>
+                    Tropical Escape
+                </p>
+
+                <button onclick="showDestination('Bali')">
+                    Explore
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <i class="fa-solid fa-plane"></i>
+
+            TravelX
+
+        </div>
+
+        <p>
+            Explore the world with comfort and confidence.
+        </p>
+
+        <p class="copyright">
+            © 2026 TravelX. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        function showDestination(destination) {
+
+            alert(
+                "🌎 " + destination +
+                "\n\nAmazing travel experiences are waiting for you!"
+            );
+
+        }
+
+
+        const menu = document.querySelector(".menu");
+
+        const navLinks =
+            document.querySelector(".nav-links");
+
+
+        if (menu) {
+
+            menu.addEventListener("click", () => {
+
+                navLinks.classList.toggle("active");
+
+            });
+
+        }
+
+
+        const bookBtn =
+            document.querySelector(".book-btn");
+
+
+        if (bookBtn) {
+
+            bookBtn.addEventListener("click", () => {
+
+                alert(
+                    "✈️ Welcome to TravelX!\n\n" +
+                    "Your dream journey starts here."
+                );
+
+            });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

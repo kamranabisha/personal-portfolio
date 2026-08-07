@@ -3,816 +3,746 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TravelX | Explore The World</title>
+    <title>TravelX | Explore The World</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
 
-<link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
-
 <body>
 
-<!-- Loading Screen -->
+    <!-- =========================
+            LOADING SCREEN
+    ========================== -->
 
-<div class="loader">
+    <div class="loader">
 
-<div class="plane-loader">
+        <div class="plane-loader">
+            <i class="fa-solid fa-plane"></i>
+        </div>
 
-<i class="fa-solid fa-plane"></i>
+        <h2>TravelX</h2>
 
-</div>
-
-<h2>
-TravelX
-</h2>
-
-</div>
-
-<!-- Navbar -->
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo">
-<i class="fa-solid fa-plane"></i>
-Travel<span>X</span>
-</div>
+    </div>
 
 
+    <!-- =========================
+            NAVBAR
+    ========================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-plane"></i>
+                Travel<span>X</span>
+            </div>
 <ul class="nav-links">
 
-<li><a href="#">Home</a></li>
-<li><a href="#">Destinations</a></li>
-<li><a href="#">Packages</a></li>
-<li><a href="#">Hotels</a></li>
-<li><a href="#">Contact</a></li>
+    <li><a href="index.html">Home</a></li>
 
+<li><a href="destinations.html">Destinations</a></li>
+
+<li><a href="packages.html">Packages</a></li>
+
+<li><a href="hotels.html">Hotels</a></li>
+
+<li><a href="#contact">Contact</a></li>
 </ul>
 
+            <button class="book-btn">
+                Book Now
+            </button>
 
-<button class="book-btn">
-Book Now
-</button>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
+        </nav>
 
-<div class="menu">
-<i class="fa-solid fa-bars"></i>
-</div>
+    </header>
 
 
-</nav>
+    <!-- =========================
+            HERO SECTION
+    ========================== -->
 
-</header>
+    <section class="hero" id="home">
 
+        <div class="hero-content">
 
+            <h1>
+                Explore The World
+                <br>
+                <span>With TravelX</span>
+            </h1>
 
+            <p>
+                Discover beautiful destinations, luxury hotels,
+                and unforgettable adventures around the globe.
+            </p>
 
-<!-- Hero Section -->
+            <div class="hero-buttons">
 
+                <button class="primary-btn">
+                    Start Exploring
+                </button>
 
-<section class="hero">
+                <button class="secondary-btn">
+                    View Packages
+                </button>
 
+            </div>
 
-<div class="hero-content">
+        </div>
 
 
-<h1>
-Explore The World
-<br>
-<span>With TravelX</span>
-</h1>
+        <div class="hero-image">
 
+            <img
+                src="images/home.png"
+                alt="Beautiful Travel Destination">
 
-<p>
-Discover beautiful destinations, luxury hotels,
-and unforgettable adventures around the globe.
-</p>
+        </div>
 
+    </section>
 
-<div class="hero-buttons">
 
-<button class="primary-btn">
-Start Exploring
-</button>
+    <!-- =========================
+            SEARCH BOX
+    ========================== -->
 
+    <section class="search-box">
 
-<button class="secondary-btn">
-View Packages
-</button>
+        <div class="search-item">
 
-</div>
+            <i class="fa-solid fa-location-dot"></i>
 
+            <div>
 
-</div>
+                <h4>Destination</h4>
 
+                <p>Where to?</p>
 
+            </div>
 
-<div class="hero-image">
+        </div>
 
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
-alt="Travel">
 
-</div>
+        <div class="search-item">
 
+            <i class="fa-solid fa-calendar"></i>
 
-</section>
+            <div>
 
+                <h4>Date</h4>
 
+                <p>Select Date</p>
 
+            </div>
 
+        </div>
 
-<!-- Search Box -->
 
+        <div class="search-item">
 
-<section class="search-box">
+            <i class="fa-solid fa-users"></i>
 
+            <div>
 
-<div class="search-item">
+                <h4>Guests</h4>
 
-<i class="fa-solid fa-location-dot"></i>
+                <p>2 People</p>
 
-<div>
-<h4>Destination</h4>
-<p>Where to?</p>
-</div>
+            </div>
 
-</div>
+        </div>
 
 
+        <button>
+            Search
+        </button>
 
+    </section>
 
-<div class="search-item">
 
-<i class="fa-solid fa-calendar"></i>
+    <!-- =========================
+            DESTINATIONS
+    ========================== -->
 
-<div>
-<h4>Date</h4>
-<p>Select Date</p>
-</div>
+    <section class="destinations" id="destinations">
 
-</div>
+        <h2>
+            Popular Destinations
+        </h2>
 
+        <p class="subtitle">
+            Explore the most beautiful places in the world
+        </p>
 
 
+        <div class="cards">
 
 
-<div class="search-item">
+            <!-- MALDIVES -->
 
-<i class="fa-solid fa-users"></i>
+            <div class="card">
 
-<div>
-<h4>Guests</h4>
-<p>2 People</p>
-</div>
+                <img
+                    src="images/maldives.jpg" alt="Maldives">
 
-</div>
+                <h3>
+                    Maldives
+                </h3>
 
+                <p>
+                    Beach Paradise
+                </p>
 
+                <button data-destination="Maldives">
+                    Explore
+                </button>
 
-<button>
-Search
-</button>
+            </div>
 
 
+            <!-- NEW YORK -->
 
-</section>
+            <div class="card">
 
+                <img
+                    src="images/new york.jpg"
+                    alt="New York">
 
+                <h3>
+                    New York
+                </h3>
 
+                <p>
+                    City Adventure
+                </p>
 
+                <button data-destination="New York">
+                    Explore
+                </button>
 
+            </div>
 
-<!-- Destinations -->
 
+            <!-- SWITZERLAND -->
 
-<section class="destinations">
+            <div class="card">
 
+                <img
+                    src="images/switzerland.jpg"
+                    alt="Switzerland">
 
-<h2>
-Popular Destinations
-</h2>
+                <h3>
+                    Switzerland
+                </h3>
 
+                <p>
+                    Mountain Escape
+                </p>
 
-<p class="subtitle">
-Explore the most beautiful places in the world
-</p>
+                <button data-destination="Switzerland">
+                    Explore
+                </button>
 
+            </div>
 
+        </div>
 
+    </section>
 
-<div class="cards">
 
+    <!-- =========================
+            ABOUT
+    ========================== -->
 
+    <section class="about">
 
-<div class="card">
+        <div class="about-image">
 
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+            <img
+                src="images/why choose us.jpg"
+                alt="Travel">
 
-<h3>
-Maldives
-</h3>
+        </div>
 
-<p>
-Beach Paradise
-</p>
 
-<button>
-Explore
-</button>
+        <div class="about-content">
 
-</div>
+            <h2>
+                Why Choose TravelX?
+            </h2>
 
+            <p>
 
+                TravelX creates unforgettable journeys with premium
+                hotels, beautiful destinations and personalized
+                travel experiences.
 
+                We help you explore the world with comfort,
+                safety and luxury.
 
+            </p>
 
-<div class="card">
 
-<img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390">
+            <div class="features">
 
-<h3>
-New York
-</h3>
+                <div>
 
-<p>
-City Adventure
-</p>
+                    <i class="fa-solid fa-earth-americas"></i>
 
-<button>
-Explore
-</button>
+                    <h4>
+                        150+ Countries
+                    </h4>
 
-</div>
+                </div>
 
 
+                <div>
 
+                    <i class="fa-solid fa-hotel"></i>
 
+                    <h4>
+                        Luxury Hotels
+                    </h4>
 
-<div class="card">
+                </div>
 
-<img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1">
 
-<h3>
-Switzerland
-</h3>
+                <div>
 
-<p>
-Mountain Escape
-</p>
+                    <i class="fa-solid fa-headset"></i>
 
-<button>
-Explore
-</button>
+                    <h4>
+                        24/7 Support
+                    </h4>
 
-</div>
+                </div>
 
+            </div>
 
+        </div>
 
+    </section>
 
-</div>
 
+    <!-- =========================
+            PACKAGES
+    ========================== -->
 
-</section>
+    <section class="packages" id="packages">
 
-<!-- =========================
-        ABOUT SECTION
-========================= -->
+        <h2>
+            Popular Travel Packages
+        </h2>
 
-<section class="about">
+        <p class="subtitle">
+            Choose your perfect holiday package
+        </p>
 
 
-<div class="about-image">
+        <div class="package-container">
 
-<img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828"
-alt="Travel">
 
-</div>
+            <!-- MALDIVES PACKAGE -->
 
+            <div class="package-card">
 
+                <h3>
+                    Maldives Escape
+                </h3>
 
-<div class="about-content">
+                <h1>
+                    $999
+                </h1>
 
-<h2>
-Why Choose TravelX?
-</h2>
+                <p>
+                    5 Days • Luxury Resort • Beach Tour
+                </p>
 
+                <button
+                    class="package-btn"
+                    data-package="Maldives Escape - $999">
 
-<p>
+                    Book Package
 
-TravelX creates unforgettable journeys with premium hotels,
-beautiful destinations and personalized travel experiences.
-We help you explore the world with comfort, safety and luxury.
+                </button>
 
-</p>
+            </div>
 
 
+            <!-- SWISS PACKAGE -->
 
-<div class="features">
+            <div class="package-card popular">
 
+                <span>
+                    POPULAR
+                </span>
 
-<div>
-<i class="fa-solid fa-earth-americas"></i>
-<h4>150+ Countries</h4>
-</div>
+                <h3>
+                    Swiss Adventure
+                </h3>
 
+                <h1>
+                    $1499
+                </h1>
 
-<div>
-<i class="fa-solid fa-hotel"></i>
-<h4>Luxury Hotels</h4>
-</div>
+                <p>
+                    7 Days • Mountains • Snow Experience
+                </p>
 
+                <button
+                    class="package-btn"
+                    data-package="Swiss Adventure - $1499">
 
-<div>
-<i class="fa-solid fa-headset"></i>
-<h4>24/7 Support</h4>
-</div>
+                    Book Package
 
+                </button>
 
-</div>
+            </div>
 
 
-</div>
+            <!-- DUBAI PACKAGE -->
 
+            <div class="package-card">
 
-</section>
+                <h3>
+                    Dubai Luxury
+                </h3>
 
+                <h1>
+                    $799
+                </h1>
 
+                <p>
+                    4 Days • Hotels • Desert Safari
+                </p>
 
+                <button
+                    class="package-btn"
+                    data-package="Dubai Luxury - $799">
 
+                    Book Package
 
+                </button>
 
+            </div>
 
-<!-- =========================
-        PACKAGES
-========================= -->
+        </div>
 
+    </section>
 
-<section class="packages">
 
+    <!-- =========================
+            HOTELS
+    ========================== -->
 
-<h2>
-Popular Travel Packages
-</h2>
+    <section class="hotels" id="hotels">
 
-<p class="subtitle">
-Choose your perfect holiday package
-</p>
+        <h2>
+            Luxury Hotels
+        </h2>
 
 
+        <div class="hotel-container">
 
 
-<div class="package-container">
+            <div class="hotel-card">
 
+                <img
+                    src="images/ocean paradise.jpg"
+                    alt="Ocean Paradise Resort">
 
+                <h3>
+                    Ocean Paradise Resort
+                </h3>
 
-<div class="package-card">
+                <p>
+                    ★★★★★ Luxury Hotel
+                </p>
 
+            </div>
 
-<h3>
-Maldives Escape
-</h3>
 
-<h1>
-$999
-</h1>
+            <div class="hotel-card">
 
+                <img
+                    src="images/mountains view.jpg"
+                    alt="Mountain View Hotel">
 
-<p>
-5 Days • Luxury Resort • Beach Tour
-</p>
+                <h3>
+                    Mountain View Hotel
+                </h3>
 
+                <p>
+                    ★★★★★ Premium Stay
+                </p>
 
-<button>
-Book Package
-</button>
+            </div>
 
 
-</div>
+            <div class="hotel-card">
 
+                <img
+                    src="images/royal palace.jpg"
+                    alt="Royal Palace Hotel">
 
+                <h3>
+                    Royal Palace Hotel
+                </h3>
 
+                <p>
+                    ★★★★★ Luxury Experience
+                </p>
 
+            </div>
 
-<div class="package-card popular">
+        </div>
 
+    </section>
 
-<span>
-POPULAR
-</span>
 
+    <!-- =========================
+            REVIEWS
+    ========================== -->
 
-<h3>
-Swiss Adventure
-</h3>
+    <section class="reviews">
 
+        <h2>
+            What Travelers Say
+        </h2>
 
-<h1>
-$1499
-</h1>
 
+        <div class="review-box">
 
-<p>
-7 Days • Mountains • Snow Experience
-</p>
 
+            <div class="review">
 
-<button>
-Book Package
-</button>
+                <p>
+                    "TravelX made my vacation amazing.
+                    The hotels and support were excellent."
+                </p>
 
+                <h4>
+                    - Sarah
+                </h4>
 
-</div>
+            </div>
 
 
+            <div class="review">
 
+                <p>
+                    "Beautiful destinations and smooth
+                    booking experience."
+                </p>
 
+                <h4>
+                    - Ahmed
+                </h4>
 
+            </div>
 
-<div class="package-card">
 
+            <div class="review">
 
-<h3>
-Dubai Luxury
-</h3>
+                <p>
+                    "Best travel website with premium service."
+                </p>
 
+                <h4>
+                    - Emma
+                </h4>
 
-<h1>
-$799
-</h1>
+            </div>
 
 
-<p>
-4 Days • Hotels • Desert Safari
-</p>
+        </div>
 
+    </section>
 
-<button>
-Book Package
-</button>
 
+    <!-- =========================
+            NEWSLETTER
+    ========================== -->
 
-</div>
+    <section class="newsletter">
 
+        <h2>
+            Subscribe For Travel Deals
+        </h2>
 
+        <p>
+            Get exclusive offers and destination updates
+        </p>
 
 
-</div>
+        <div>
 
+            <input
+                type="email"
+                id="emailInput"
+                placeholder="Enter your email">
 
+            <button id="subscribeBtn">
+                Subscribe
+            </button>
 
-</section>
+        </div>
 
+    </section>
 
 
+    <!-- =========================
+            STATS
+    ========================== -->
 
+    <section class="stats">
 
 
+        <div class="stat-box">
 
+            <i class="fa-solid fa-plane-departure"></i>
 
-<!-- =========================
-        HOTELS
-========================= -->
+            <h2 class="counter">
+                150
+            </h2>
 
+            <p>
+                Countries
+            </p>
 
-<section class="hotels">
+        </div>
 
 
-<h2>
-Luxury Hotels
-</h2>
+        <div class="stat-box">
 
+            <i class="fa-solid fa-users"></i>
 
-<div class="hotel-container">
+            <h2 class="counter">
+                50000
+            </h2>
 
+            <p>
+                Happy Travelers
+            </p>
 
-<div class="hotel-card">
+        </div>
 
-<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
 
-<h3>
-Ocean Paradise Resort
-</h3>
+        <div class="stat-box">
 
-<p>
-★★★★★ Luxury Hotel
-</p>
+            <i class="fa-solid fa-hotel"></i>
 
+            <h2 class="counter">
+                1200
+            </h2>
 
-</div>
+            <p>
+                Luxury Hotels
+            </p>
 
+        </div>
 
 
+        <div class="stat-box">
 
+            <i class="fa-solid fa-award"></i>
 
-<div class="hotel-card">
+            <h2 class="counter">
+                25
+            </h2>
 
-<img src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6">
+            <p>
+                Awards
+            </p>
 
+        </div>
 
-<h3>
-Mountain View Hotel
-</h3>
 
-<p>
-★★★★★ Premium Stay
-</p>
+    </section>
 
 
-</div>
+    <!-- =========================
+            FOOTER
+    ========================== -->
 
+    <footer id="contact">
 
+        <div class="footer-logo">
 
+            <i class="fa-solid fa-plane"></i>
 
+            TravelX
 
+        </div>
 
-<div class="hotel-card">
 
+        <p>
+            Explore the world with comfort and confidence.
+        </p>
 
-<img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa">
 
+        <div class="social">
 
-<h3>
-Royal Palace Hotel
-</h3>
+            <a href="https://www.facebook.com/"
+               target="_blank">
 
+                <i class="fa-brands fa-facebook"></i>
 
-<p>
-★★★★★ Luxury Experience
-</p>
+            </a>
 
 
-</div>
+            <a href="https://www.instagram.com/"
+               target="_blank">
 
+                <i class="fa-brands fa-instagram"></i>
 
-</div>
+            </a>
 
 
-</section>
+            <a href="https://www.linkedin.com/"
+               target="_blank">
 
+                <i class="fa-brands fa-linkedin"></i>
 
+            </a>
 
 
+            <a href="https://twitter.com/"
+               target="_blank">
 
+                <i class="fa-brands fa-twitter"></i>
 
+            </a>
 
+        </div>
 
-<!-- =========================
-        REVIEWS
-========================= -->
 
+        <p class="copyright">
 
-<section class="reviews">
+            © 2026 TravelX. All Rights Reserved.
 
+        </p>
 
-<h2>
-What Travelers Say
-</h2>
+    </footer>
 
 
-
-<div class="review-box">
-
-
-<div class="review">
-
-<p>
-"TravelX made my vacation amazing.
-The hotels and support were excellent."
-</p>
-
-<h4>
-- Sarah
-</h4>
-
-
-</div>
-
-
-
-
-
-<div class="review">
-
-<p>
-"Beautiful destinations and smooth booking experience."
-</p>
-
-<h4>
-- Ahmed
-</h4>
-
-
-</div>
-
-
-
-
-<div class="review">
-
-<p>
-"Best travel website with premium service."
-</p>
-
-<h4>
-- Emma
-</h4>
-
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- =========================
-        NEWSLETTER
-========================= -->
-
-
-<section class="newsletter">
-
-
-<h2>
-Subscribe For Travel Deals
-</h2>
-
-
-<p>
-Get exclusive offers and destination updates
-</p>
-
-
-<div>
-
-
-<input type="email" placeholder="Enter your email">
-
-
-<button>
-Subscribe
-</button>
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- =========================
-        FOOTER
-========================= -->
-
-
-<footer>
-
-
-<div class="footer-logo">
-
-<i class="fa-solid fa-plane"></i>
-TravelX
-
-</div>
-
-
-<p>
-Explore the world with comfort and confidence.
-</p>
-
-
-
-<div class="social">
-
-<i class="fa-brands fa-facebook"></i>
-
-<i class="fa-brands fa-instagram"></i>
-
-<i class="fa-brands fa-linkedin"></i>
-
-<i class="fa-brands fa-twitter"></i>
-
-</div>
-
-
-
-<p class="copyright">
-
-© 2026 TravelX. All Rights Reserved.
-
-</p>
-
-<!-- =========================
-        STATS SECTION
-========================= -->
-
-
-<section class="stats">
-
-
-<div class="stat-box">
-
-<i class="fa-solid fa-plane-departure"></i>
-
-<h2 class="counter">
-150
-</h2>
-
-<p>
-Countries
-</p>
-
-</div>
-
-
-
-
-<div class="stat-box">
-
-<i class="fa-solid fa-users"></i>
-
-<h2 class="counter">
-50000
-</h2>
-
-<p>
-Happy Travelers
-</p>
-
-</div>
-
-
-
-
-
-<div class="stat-box">
-
-<i class="fa-solid fa-hotel"></i>
-
-<h2 class="counter">
-1200
-</h2>
-
-<p>
-Luxury Hotels
-</p>
-
-</div>
-
-
-
-
-
-<div class="stat-box">
-
-<i class="fa-solid fa-award"></i>
-
-<h2 class="counter">
-25
-</h2>
-
-<p>
-Awards
-</p>
-
-</div>
-
-
-
-</section>
-
-</footer>
-
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 
 </body>
 
